@@ -1,0 +1,9 @@
+NXLIB_ITEM_SEPARATOR = "/"
+NXLIB_INDEX_ESCAPE_CHAR = "\\"
+NXLIB_ITEM_FORBIDDEN_CHARS = "\r\n\"/\\\0"
+
+NX_LOG_LEVELS = {"Off": 0, "Info": 1, "Debug": 2, "Trace": 3}
+NX_LOG_LEVEL_OFF = "Off"
+NX_LOG_LEVEL_INFO = "Info"
+NX_LOG_LEVEL_DEBUG = "Debug"
+NX_LOG_LEVEL_TRACE = "Trace"
