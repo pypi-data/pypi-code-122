@@ -1,0 +1,170 @@
+class OTMCommandTypes:
+    COMMAND_TYPE_CREATE = "Oluşturma"
+    COMMAND_TYPE_DELETE = "Silme"
+    COMMAND_TYPE_UPDATE = "Düzenleme"
+    COMMAND_TYPE_ACTIVATE = "Uygulanma"
+    COMMAND_TYPE_FAIL = "Başarısız"
+
+
+class OrderStatus:
+    ROBOT = "ROBOT"
+    SCHEDULED = "SCHEDULED"
+    PENDING = "PENDING"
+    PREPARING = "PREPARING"
+    PREPARED = "PREPARED"
+    ON_THE_WAY = "ONTHEWAY"
+    DELIVERED = "DELIVERED"
+    NOT_DELIVERED = "NOTDELIVERED"
+    COMPLETED = "COMPLETED"
+    CANCELLED = "CANCELLED"
+
+
+class BasketStatus:
+    PENDING = "PENDING"
+    ASSIGNED_TO_COURIER = "ASSIGNED_TO_COURIER"
+    READY_TO_ON_THE_WAY = "READY_TO_ONTHEWAY"
+    ON_THE_WAY = "ONTHEWAY"
+    COMPLETED = "COMPLETED"
+
+
+class BillingStatus:
+    PENDING = "PENDING"
+    ZOMBIE = "ZOMBIE"
+    COMPLETED = "COMPLETED"
+    CANCELLED = "CANCELLED"
+
+
+class CourierStatus:
+    NOT_AVAILABLE = "NOT_AVAILABLE"
+    PENDING = "PENDING"
+    ASSIGNED_BASKET = "ASSIGNED_BASKET"
+    READY_TO_ON_THE_WAY = "READY_TO_ONTHEWAY"
+    ON_THE_WAY_TO_DELIVER = "ONTHEWAY_TO_DELIVER"
+    ON_THE_WAY_TO_BASE = "ONTHEWAY_TO_BASE"
+
+
+class TableNames:
+    ORDERS_ARCHIVE = "Orders_Archive"
+    MEMBERS_BRANDS = "Members_Brands"
+    MEMBERS = "Members"
+    COURIERS = "Couriers"
+    PM_USERS = "Pm_Users"
+    PAYMENT_METHODS = "Payment_Methods"
+    REGIONS_COMMANDS = "Regions_Commands"
+    OTM_REGIONS = "OTM_Regions"
+    REGIONS = "PM_Regions"
+    TR_ADDRESSES = "Turkey_Addresses"
+    BUILDING_ADDRESSES = "Buildings_Adresses"
+    PLATFORMS_PM_REGION = "Platform_Pm_Regions"
+    TURKEY_ADDRESSES = "Turkey_Addresses"
+    BUILDINGS_AREA = "PM_Buildings_Areas"
+    PM_BUILDINGS = "PM_Buildings"
+    ERROR_MESSAGES = "Error_Messages"
+
+
+class CourierOperationTxnCodes:
+    GPS = "CUR_GPS"
+    CREATE_BASKET_AND_ASSIGN = "CUR_CREATE_BASKET_AND_ASSING"
+    NOT_AVAILABLE = "CUR_NOT_AVAILABEL"
+    RETURN_BUILDING = "CUR_RETURN_BUILDING"
+    BASKET_ON_THE_WAY = "CUR_BASKET_ONTHEWAY"
+    BASKET_CLEAR = "CUR_BASKET_CLEAR"
+    ON_BUILDING = "CUR_ON_BUILDING"
+    BASKET_FINISHED = "CUR_BASKET_FINISHED"
+    ORDER_ON_THE_WAY = "CUR_ORDER_ONTHEWAY"
+    ORDER_DELIVERED = "CUR_ORDER_DELIVERED"
+    ORDER_NOT_DELIVERED = "CUR_ORDER_NOT_DELIVERED"
+
+
+class PlatformNames:
+    GT = "Getir"
+    YS = "Yemeksepeti"
+    TY = "Trendyol"
+    PHONE = "Telefon ile Sipariş"
+    HAND_DELIVERY = "Gel Al Siparişi"
+    PM_EMPLOYEE = "Paket Mutfak Çalışan Siparişi"
+    ADDITIONAL = "Ek Sipariş"
+
+
+class BuildingRegionstatus:
+    NOT_INTEGRATED = "NOT_INTEGRATED"
+    NOT_CREATED = "NOT_CREATED"
+    CREATED = "CREATED"
+    COMPLETED = "COMPLETED"
+
+
+class CourierWorkingStatus:
+    PASSIVE = 0
+    ACTIVE = 1
+    PENDING = 2
+
+
+class CourierContractTypes:
+    PART_TIME = "Part Time"
+    FULL_TIME = "Full Time"
+
+
+class OrderTypes:
+    MANUEL_ORDER_WITH_PHONE = "MANUEL_ORDER_WITH_PHONE"
+    HAND_DELIVERY = "HAND_DELIVERY_ORDER"
+    EMPLOYEE = "EMPLOYEE_ORDER"
+    PLATFORM = "PLATFORM"
+    MANUEL_ORDER = "MANUEL_ORDER"
+    ADDITIONAL = "ADDITIONAL_ORDER"
+
+
+class EndOfDayStatus:
+    PENDING = 'PENDING'
+    STARTED = 'THE_DAY_STARTED'
+    OVER = 'THE_DAY_OVER'
+
+
+class DeliveryMethod:
+    HAND_DELIVERY_TO_PM_EMPLOYEES = "HAND_DELIVERY_TO_PM_EMPLOYEES"
+    PM_COURIER = "PM_COURIER"
+    PLATFORM_COURIER = "PLATFORM_COURIER"
+    HAND_DELIVERY = "HAND_DELIVERY"
+    RESTAURANT_COURIER = "RESTAURANT_COURIER"
+
+
+class PaymentLocations:
+    ONLINE = "ONLINE"
+    AT_THE_DOOR = "AT_THE_DOOR"
+    AT_THE_RESTAURANT = "AT_THE_RESTAURANT"
+
+
+class UserTypes:
+    BUILDING_MANAGER = "BUILDING_MANAGER"
+    OPERATION_SPECIALIST = "OPERATION_SPECIALIST"
+    OPERATION_DIRECTOR = "OPERATION_DIRECTOR"
+    DIRECTOR_OF_SALES = "DIRECTOR_OF_SALES"
+    COURIER_CHIEF = "COURIER_CHIEF"
+    ACCOUNTING_DIRECTOR = "ACCOUNTING_DIRECTOR"
+    ACCOUNTING_EMPLOYEE = "ACCOUNTING_EMPLOYEE"
+    CRAFT = "CRAFT"
+    KITCHENS_DIRECTOR = "KITCHENS_DIRECTOR"
+    MARKETING_EMPLOYEE = "MARKETING_EMPLOYEE"
+    CO_FOUNDER = "CO-FOUNDER"
+    MEMBER = "MEMBER"
+    KITCHEN_EMPLOYEE = "KITCHEN_EMPLOYEE"
+    COURIER = "COURIER"
+
+
+class CustomerTypes:
+    PM_EMPLOYEE = "PM-EMPLOYEE"
+    PLATFORM_CUSTOMER = "PLATFORM-CUSTOMER"
+    CUSTOMER = "CUSTOMER"
+
+
+# todo: silinebilir
+
+# class CancelledBillsContants:
+#     EXCEL_NAME = "İptal_Adisyonlar"
+#     PDF_NAME = "İptal_Adisyonlar"
+#     BRAND = "Şube"
+#     ORDER_NO = "Sipariş No"
+#     BRAND_SHIPPING_COSTS = "Üye'den G.Ü Alınacak mi"
+#     COURIER_BONUS = "Kuryeye Prim Verilecek mi"
+#     DESCRIPTION = "Açıklama"
+#     YES = "Evet"
+#     NO = "Hayır"
