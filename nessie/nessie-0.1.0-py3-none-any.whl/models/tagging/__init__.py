@@ -1,0 +1,5 @@
+from .dummy_sequence_classifier import DummySequenceTagger
+from .flair_sequence_tagger import FlairSequenceTagger
+from .handcrafted_crf_sequence_tagger import CrfSequenceTagger
+from .maxent_sequence_tagger import MaxEntSequenceTagger
+from .transformer_sequence_tagger import TransformerSequenceTagger
